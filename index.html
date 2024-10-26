@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+  <link rel="stylesheet" href="style.css" />
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+</head>
+
+<body id="home">
+  <div id="main ">
+    <header>
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <nav class="col-12 nav ">
+              <div class="nav-menu">
+                <div class="left px-3">
+                  <h1> <span>Portfolio.</span></h1>
+
+                </div>
+                <i class='bx bx-menu' id="menu-icon"></i>
+              </div>
+              <div class="right">
+
+                <ul>
+                  <li><a href="#home" class="active">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#service">Service</a></li>
+                  <li><a href="#portfolio">Projects</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Personal_Banner -->
+    <section class="first_section">
+      <div class="container-fluid">
+        <div class="container container-xl">
+          <div class="row row_1 ">
+            <div class="port_text col-12 col-md-6">
+              <h1>Hi, My name is <span>SYED UMAR</span></h1>
+              <h1>And I am a passionate</h1>
+              <span class="element"></span>
+              <p><span>"</span>Crafting clean, responsive websites with a focus on seamless user experiences and
+                performance. Let's build something amazing!<span>"</span></p>
+
+              <div class="social-media">
+                <a href="https://www.facebook.com/abdullah.riaz.77312" target="_blank"><i
+                    class='bx bxl-facebook-circle'></i></a>
+                <a href="https://www.instagram.com/itx_syedumar/" target="_blank"><i
+                    class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.linkedin.com/in/syed-umar-084053247/" target="_blank"><i
+                    class='bx bxl-linkedin-square'></i></a>
+                <a href="#" target="_blank"><i class='bx bxl-twitter'></i></a>
+              </div>
+              <a href="Syed-Umar-CV.pdf" download="newfilename" class=" btn_1">Download CV</a>
+            </div>
+            <div class="design col-12 col-md-6">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <Hr>
+    </Hr>
+
+    <!-- About Me Section -->
+    <section class="about" id="about">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row row_2">
+            <div class="about_img col-12 col-md-5">
+              <img src="InShot_20230729_211244658.jpg" alt="">
+            </div>
+
+            <!-- <div class="design_2 col-12 col-md-6">
+              <div class="circle_1"></div>
+              <div class="circle_1"></div>
+            </div> -->
+            <div class="about_text col-12 col-md-7">
+              <h2 class="heading">About <span>Me</span> </h2>
+              <!-- <h3>Frontend Developer!</h3> -->
+              <h4>I'm a frontend web developer specializing in responsive, user-friendly websites with HTML, CSS, and
+                JavaScript. With a focus on design and performance, I bring ideas to life using clean code and modern
+                frameworks, creating seamless experiences that make an impact.</h4>
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>Web Development</span><br>Develop Responsive Website</li>
+                  <li><span>Ui/Ux Designer</span><br>Design websites interface</li>
+                  <li><span>Graphic Designer</span><br>Create Ui Designs</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li><span>2023-2024</span><br>Working as a Front-End Developer</li>
+                  <li><span>July-Sept(2024)</span><br>Done Intership at Code-Alpha</li>
+                  <li><span>Sept-Current</span><br>Working As a Freelancer</li>
+
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li><span>2021</span><br>Done Matriculation at SSGH School Lahore</li>
+                  <li><span>2023</span><br>Done Ics (Computer & Science) At Civil-Line Collage Lahore</li>
+                  <li><span>2023-Current</span><br>Doing Bachelors in Computer Science</li>
+                </ul>
+              </div>
+              <!-- <a href="#" class="btn_1">Read More</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- service section -->
+    <section class="service" id="service">
+      <div class="container-fluid">
+        <div class="row col-12">
+          <h2 class="heading">Our <span>Service</span></h2>
+        </div>
+        <div class="row px-5">
+          <div class=" service-box-main col-12">
+            <div class="service-box ">
+              <i class='bx bx-code-alt '></i>
+              <h2>Web Development</h2>
+              <p>I specialize in frontend web development, creating responsive and visually engaging websites tailored
+                to your brand’s unique needs. High-performance websites that not only look great but also deliver an
+                exceptional user experience.</p>
+              <a href="#" class="btn_1">Read More</a>
+            </div>
+
+            <div class="service-box ">
+              <i class='bx bxs-paint '></i>
+              <h2>Graphic Designer</h2>
+              <p>I specialize in graphic design, creating visually compelling and effective designs tailored to your
+                brand’s identity. From logos to marketing materials, I focus on delivering stunning visuals that
+                communicate and engage your audience.
+              </p>
+              <a href="#" class="btn_1">Read More</a>
+            </div>
+
+            <div class="service-box ">
+              <i class='bx bx-bar-chart-alt'></i>
+              <h2>Digital Marketintg</h2>
+              <p>I offer tailored digital marketing services that boost your online presence and engage your target
+                audience. Through strategic social media campaigns, SEO, and content marketing, I create impactful
+                solutions that enhance brand.</p>
+              <a href="#" class="btn_1">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Portfolio section -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest <span>Projects</span></h2>
+      <div class="portfolio-main">
+        <div class="container">
+          <div class="row">
+            <div class="porfolio-container">
+              <div class="portfolio-box">
+                <img src="portfolio-1.jpg" alt="">
+                <div class="portfolio-layer ">
+                  <h4> Web Design</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam atque, </p>
+                  <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+              </div>
+
+              <div class="portfolio-box">
+                <img src="portfolio-1.jpg" alt="">
+                <div class="portfolio-layer">
+                  <h4> Web Design</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam atque, </p>
+                  <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+              </div>
+
+              <div class="portfolio-box">
+                <img src="portfolio-3.jpg" alt="">
+                <div class="portfolio-layer">
+                  <h4> Web Design</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam atque,</p>
+                  <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+              </div>
+
+              <div class="portfolio-box">
+                <img src="portfolio-1.jpg" alt="">
+                <div class="portfolio-layer">
+                  <h4> Web Design</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam atque,</p>
+                  <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+
+              </div>
+              <div class="portfolio-box">
+                <img src="portfolio-1.jpg" alt="">
+                <div class="portfolio-layer">
+                  <h4> Web Design</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam atque,</p>
+                  <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+              </div>
+
+              <div class="portfolio-box">
+                <img src="portfolio-1.jpg" alt="">
+                <div class="portfolio-layer">
+                  <h4> Web Design</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam atque, </p>
+                  <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact Us section-->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+      <div class="container">
+        <div class="row">
+          <form action="#">
+            <div class="input-box">
+              <input type="text" placeholder="Full Name">
+              <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+              <input type="number" placeholder="Mobile Number">
+              <input type="text" placeholder="Email subject">
+            </div>
+            <textarea name="" id="" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn_1 ">
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+
+
+        <div class="footer">
+          <div class="footer-text ">
+            <p>Copyright &copy; 2024 by Syed Umar | All Rights Reserved.</p>
+          </div>
+          <div class="footer-top-icon ">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+          </div>
+        </div>
+
+
+      </div>
+    </footer>
+
+
+
+  </div>
+
+
+
+
+  <!-- Scroll Reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- Smooth Scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+  <!-- Bootstrap Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
