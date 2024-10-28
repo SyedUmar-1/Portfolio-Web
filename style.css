@@ -12,6 +12,7 @@
   color: var(--text-color);
   transition: 0.5s  ease;
   scroll-behavior:smooth;
+  overflow-y: hidden;
 }
 
 
