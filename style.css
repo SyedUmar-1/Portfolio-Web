@@ -12,7 +12,7 @@
   color: var(--text-color);
   transition: 0.5s  ease;
   scroll-behavior:smooth;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 
@@ -31,7 +31,6 @@ body {
   height: 100%;
   background-color: var(--bg-color);
   color: var(--text-color);
-  overflow-x: hidden;
   scroll-behavior:smooth;
 }
 
