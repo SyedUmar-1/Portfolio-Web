@@ -169,38 +169,7 @@ inset 0 0 2rem var(--main-color)
   height: 100%;
 }
 
-.design_2 .circle_1{
-  aspect-ratio: 1;
-  position: absolute;
-  border-radius: 50%;
-  /* top: 45%; */
-  /* left: 75%;
-  transform:translate(-50%,-50%) ; */
-  }
- .circle_1:nth-child(1){
-    width: 29rem;
-    background-color: rgb(255, 255, 255);
-    
-    }
-  .circle_1:nth-child(2){
-    width: 28rem;
-    background-image: url(pg.jpg);
-    background-size: cover;
-    border: 0 0 1rem white;
-    background-repeat: no-repeat;
-    box-shadow: 0 0 1rem white,
-    inset 0 0 1rem white,
-    0 0 2rem var(--main-color),
-    inset 0 0 2rem var(--main-color),
-    0 0 4rem var(--main-color),
-    inset 0 0 2rem var(--main-color)
-    ;
-    
-    }
-    .circle_1:nth-child(2) img{
-      width: 100%;
-      height: 100%;
-    }
+
 /* #hexagon {
   width: 100px;
   height: 57.735px;
@@ -417,12 +386,11 @@ width: 50%;
 .service{
  padding: 0rem 0;
  margin-top: 2rem;
- min-height: 100vh;
 
 }
 .service .heading{
   text-align: center;
-  margin-bottom: 1.8rem;
+  margin-bottom: 3rem;
   margin-top: 1.5rem;
  
 }
@@ -689,8 +657,30 @@ footer p{
 
   .first_section{
     display: block;
-   position: relative;
+  
   }
+
+  .design .circle{
+    position: relative;
+    top: 0%;
+   margin-top: 2rem;
+    left: 9%;
+    transform:translate(0%,0%) ;
+    }
+  
+
+.circle:nth-child(1){
+ all: unset;
+}
+
+.circle:nth-child(2){
+  width: 32rem;
+}
+
+.about img{
+  width: 90%;
+ 
+}
   #menu-icon{
     display: block;
   }
@@ -712,9 +702,6 @@ footer p{
     
     
   }
-  nav ul .active{
-    display: block;
-  }
 
   
   .nav-menu{
@@ -722,11 +709,14 @@ footer p{
     justify-content: space-between;
   }
 
-  nav ul{
-  
+  nav ul{ 
     font-size: 2rem;
     padding: 3rem 0;
     display: none;
+  }
+  
+  nav ul.active{
+    display: block;
   }
   
 .portfolio h2{
@@ -761,7 +751,9 @@ footer p{
  .portfolio-layer p{
    font-size: 1.1rem;
  }
-
+  .contact{
+   min-height: 80vh;
+  }
 }
 
 @media(max-width:450px){
@@ -772,7 +764,10 @@ footer p{
   .contact form .input-box input{
     width: 100%;
   }
-}
+  .contact{
+    min-height: 60vh;
+   }
+ }
 
 @media(max-width:350px){
   .footer{
