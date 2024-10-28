@@ -12,7 +12,7 @@
   color: var(--text-color);
   transition: 0.5s  ease;
   scroll-behavior:smooth;
-  overflow: hidden;
+
 }
 
 
@@ -32,6 +32,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   scroll-behavior:smooth;
+  overflow-x: hidden;
 }
 
 a{
@@ -130,7 +131,7 @@ nav ul li a.active {
 .first_section{
   display: flex;
   justify-content: center;
-  
+  overflow: unset;
 margin: 5rem 0 8rem 0;
  position: relative;
   
@@ -143,6 +144,7 @@ border-radius: 50%;
 top: 45%;
 left: 75%;
 transform:translate(-50%,-50%) ;
+
 }
 .circle:nth-child(1){
 width: 29rem;
@@ -291,15 +293,21 @@ inset 0 0 2rem var(--main-color)
 }
 
 
-
+.about_img{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
 
 .about_img img {
   width: 100%;
   height: 100%;
   border-radius: 2rem;
+ 
 }
 
 .about_text {
+  margin-top: 2rem;
   align-items: center;
   color: #fff;
   flex-basis: 60%;
@@ -385,7 +393,8 @@ width: 50%;
 
 .service{
  padding: 0rem 0;
- margin-top: 2rem;
+ margin-top: 4rem;
+ margin-bottom: 4rem;
 
 }
 .service .heading{
@@ -454,11 +463,9 @@ flex: 1 1 30rem;
 
 .portfolio{
   background-color: var(--second-bg-color);
-padding-bottom: 5rem;
+padding-bottom: 7rem;
 min-height: 100vh;
  padding-top: 1rem;
-  
-  
 }
 .portfolio h2{
  
@@ -615,19 +622,21 @@ footer p{
 
 /* Break POints */
 @media(max-width:1200px){
-  html{
-    font-size: 70%;
-  }
-  .portfolio{
-    min-height: 90%;
-  }
-
+   html{
+     font-size: 70%;
+ }
+ .portfolio{
+     min-height: 90%;
+ }
+.contact{
+  min-height: 50vh;
+}
 
 }
 @media(max-width:991px){
 
  .contact{
-  min-height: 70vh;
+  min-height: 40vh;
  }
  .service-box-main{
   flex-wrap: wrap;
@@ -655,9 +664,12 @@ footer p{
 
 @media(max-width:768px){
 
+body{
+  overflow-x: hidden;
+}
+
   .first_section{
     display: block;
-  
   }
 
   .design .circle{
@@ -752,7 +764,15 @@ footer p{
    font-size: 1.1rem;
  }
   .contact{
-   min-height: 80vh;
+   min-height: 40vh;
+  }
+  .first_section .design{
+    overflow: unset;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+  }
+  *{
+    overflow-x: hidden;
   }
 }
 
@@ -765,7 +785,7 @@ footer p{
     width: 100%;
   }
   .contact{
-    min-height: 60vh;
+    min-height: 40vh;
    }
  }
 
